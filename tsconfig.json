@@ -1,7 +1,16 @@
 {
   "files": [],
   "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "compilerOptions": {
+    "jsx": "react-jsx", // 設定 JSX 支援
+    "esModuleInterop": true, // 確保 Jest 正確解析 import
+    "allowSyntheticDefaultImports": true // 允許無需 `default` 的 import
+  }
 }
